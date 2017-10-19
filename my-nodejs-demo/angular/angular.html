@@ -1,0 +1,30 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">  <!-- it's important for d3.js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/d3/d3.js"></script>
+    <script src="bower_components/nvd3/build/nv.d3.js"></script> <!-- or use another assembly -->
+    <script src="bower_components/angular-nvd3/dist/angular-nvd3.js"></script>
+    
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
+
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  
+
+
+    <script src="app.js"></script>
+  </head>
+  <body>
+
+    <!-- Use a custom component to render a list of phones -->
+    <div ng-app='myApp'>
+       <div ng-controller='myCtrl'>
+          <p ng-name='$myCtrl.name'>{{name}}</p>
+          <nvd3 options='options' data='data'></nvd3>
+       </div>
+   </div>
+
+  </body>
+</html>

@@ -1,0 +1,25 @@
+{
+	"name": "NodejsStarterApp",
+	"version": "0.0.1",
+    "private": true,
+	"scripts": {
+		"start": "node app.js"
+	},
+	"dependencies": {
+		"body-parser":"~1.13.2",
+		"express": "4.13.x",
+		"cfenv": "1.0.x",
+        "mongoose":"*",
+        "formidable":"*",
+        "mysql":"latest",
+        "pg":"*",
+        "line-reader":"*",
+        "node-schedule":"*",
+        "angular-resource":"*",
+        "angular-route":"*"
+	},
+	"repository": {},
+	"engines": {
+		"node": "4.2.x"
+	} 
+}
